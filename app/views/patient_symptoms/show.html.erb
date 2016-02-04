@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>/:</b>
+  <%= @patient_symptom./ %>
+</p>
+
+<p>
+  <b>Status:</b>
+  <%= @patient_symptom.status %>
+</p>
+
+
+<%= link_to 'Edit', edit_patient_symptom_path(@patient_symptom) %> |
+<%= link_to 'Back', patient_symptoms_path %>

@@ -1,0 +1,29 @@
+<h1>Listing patient_conditions</h1>
+
+<table>
+  <tr>
+    <th>/</th>
+    <th>Current</th>
+    <th>Past</th>
+    <th>Where</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @patient_conditions.each do |patient_condition| %>
+  <tr>
+    <td><%= patient_condition./ %></td>
+    <td><%= patient_condition.current %></td>
+    <td><%= patient_condition.past %></td>
+    <td><%= patient_condition.where %></td>
+    <td><%= link_to 'Show', patient_condition %></td>
+    <td><%= link_to 'Edit', edit_patient_condition_path(patient_condition) %></td>
+    <td><%= link_to 'Destroy', patient_condition, :method => :delete, :data => { :confirm => 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Patient condition', new_patient_condition_path %>

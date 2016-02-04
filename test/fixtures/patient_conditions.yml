@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  /: MyString
+  current: MyString
+  past: MyString
+  where: MyString
+
+two:
+  /: MyString
+  current: MyString
+  past: MyString
+  where: MyString

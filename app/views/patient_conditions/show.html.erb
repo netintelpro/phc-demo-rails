@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>/:</b>
+  <%= @patient_condition./ %>
+</p>
+
+<p>
+  <b>Current:</b>
+  <%= @patient_condition.current %>
+</p>
+
+<p>
+  <b>Past:</b>
+  <%= @patient_condition.past %>
+</p>
+
+<p>
+  <b>Where:</b>
+  <%= @patient_condition.where %>
+</p>
+
+
+<%= link_to 'Edit', edit_patient_condition_path(@patient_condition) %> |
+<%= link_to 'Back', patient_conditions_path %>
